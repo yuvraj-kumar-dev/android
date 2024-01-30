@@ -536,7 +536,8 @@ public class OCFileListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         if (file.getDecryptedFileName().contains(".")) {
             String filename = file.getDecryptedFileName().substring(0, file.getDecryptedFileName().lastIndexOf('.'));
             String extension = file.getDecryptedFileName().substring(file.getDecryptedFileName().lastIndexOf('.'));
-            holder.getFileName().setText(filename + extension);
+            holder.getFileName().setText(filename);
+            holder.getExtension().setText(extension);
         } else {
             holder.getFileName().setText(file.getDecryptedFileName());
         }
