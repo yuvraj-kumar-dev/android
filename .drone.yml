@@ -221,11 +221,11 @@ services:
       - su www-data -c "php /var/www/html/occ group:add users"
       - su www-data -c "php /var/www/html/occ group:adduser users user1"
       - su www-data -c "php /var/www/html/occ group:adduser users user2"
-      - su www-data -c "git clone -b stable16 https://github.com/nextcloud/activity.git /var/www/html/apps/activity/"
+      - su www-data -c "git clone -b stable17 https://github.com/nextcloud/activity.git /var/www/html/apps/activity/"
       - su www-data -c "php /var/www/html/occ app:enable activity"
-      - su www-data -c "git clone -b stable16 https://github.com/nextcloud/text.git /var/www/html/apps/text/"
+      - su www-data -c "git clone -b stable17 https://github.com/nextcloud/text.git /var/www/html/apps/text/"
       - su www-data -c "php /var/www/html/occ app:enable text"
-      - su www-data -c "git clone -b stable16 https://github.com/nextcloud/end_to_end_encryption.git /var/www/html/apps/end_to_end_encryption/"
+      - su www-data -c "git clone -b stable17 https://github.com/nextcloud/end_to_end_encryption.git /var/www/html/apps/end_to_end_encryption/"
       - su www-data -c "php /var/www/html/occ app:enable end_to_end_encryption"
       - /run.sh
 
@@ -242,6 +242,6 @@ name: GIT_TOKEN
 data: XIoa9IYq+xQ+N5iln8dlpWv0jV6ROr7HuE24ioUr4uQ8m8SjyH0yognWYLYLqnbTKrFWlFZiEMQTH/sZiWjRFvV1iL0=
 ---
 kind: signature
-hmac: 5b36a1ec8d6910fa0b0cf596f73e2543216c05e647d5b8ffcbc96051b6037706
+hmac: 98af5a165e60eec6cea25344f337ff21d0a4b9771f7caa13cfb363066f1ea1b4
 
 ...
