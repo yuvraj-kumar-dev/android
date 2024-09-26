@@ -208,7 +208,7 @@ services:
     image: nextcloudci/server:server-13
     environment:
       EVAL: true
-      BRANCH: stable16
+      BRANCH: stable17
     commands:
       - /initnc.sh
       - su www-data -c "php /var/www/html/occ log:manage --level warning"
@@ -242,6 +242,6 @@ name: GIT_TOKEN
 data: XIoa9IYq+xQ+N5iln8dlpWv0jV6ROr7HuE24ioUr4uQ8m8SjyH0yognWYLYLqnbTKrFWlFZiEMQTH/sZiWjRFvV1iL0=
 ---
 kind: signature
-hmac: a659f1f06a609743077c77b6a07a369e55db67adbd8343fc027ac1c9473d1a43
+hmac: 5b36a1ec8d6910fa0b0cf596f73e2543216c05e647d5b8ffcbc96051b6037706
 
 ...
